@@ -9,9 +9,9 @@ In order to run this pattern library genrator correctly you'll need to follow a 
 2. `$ npm install` — To get all the dependencies for grunt.
 
 ## Running the project
-Just simply execute `grunt` or `grunt:serve` and the project will build itself, set up a server, open the library page and wait for you to make changes.
+Just simply execute `grunt` or `grunt serve` and the project will build itself, set up a server, open the library page and wait for you to make changes.
 
 ## Building the project
-Once you're happy with everything, run `grunt:build` and it will compile, minify and compress everything ready for production. Pop the repo on your server and get it to point to the `web` directory, job's a good-un.
+Once you're happy with everything, run `grunt build` and it will compile, minify and compress everything ready for production. Pop the repo on your server and get it to point to the `web` directory, job's a good-un.
 
 * almost everything
