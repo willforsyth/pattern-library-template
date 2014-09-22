@@ -3,6 +3,14 @@ layout: base
 title: Hello World
 ---
 
+<style>
+    {% capture patterns__styles %}
+        {% include patterns.scss %}
+    {% endcapture %}
+
+    {{ patterns__styles | scssify }}
+</style>
+
 <main role="main">
     <h1>Patterns</h1>
     <nav>
