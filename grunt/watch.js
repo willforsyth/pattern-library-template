@@ -8,10 +8,10 @@ module.exports = {
     },
     jekyll: {
         files: [
-            'dev/*.md',
+            'dev/*.{html,md}',
             'dev/_includes/*.html',
             'dev/_layouts/*.html',
-            'dev/patterns/{,components/}*.html',
+            'dev/patterns/*.html',
             'dev/_plugins/*.rb'
         ],
         tasks: [
