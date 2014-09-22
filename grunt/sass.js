@@ -18,7 +18,7 @@ module.exports = {
         files: [{
             expand: true,
             cwd: 'dev/_assets/scss',
-            src: ['*.scss', '!patterns.scss'],
+            src: '*.scss',
             dest: 'web/css/',
             ext: '.css'
         }]
