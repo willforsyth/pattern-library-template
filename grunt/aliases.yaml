@@ -1,0 +1,17 @@
+default:
+ - 'serve'
+
+serve:
+ - 'clean:server'
+ - 'jekyll:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
+ - 'connect'
+ - 'watch'
+
+build:
+ - 'clean:dist'
+ - 'jekyll:dist'
+ - 'sass:dist'
+ - 'autoprefixer:dist'
+ - 'htmlmin'
