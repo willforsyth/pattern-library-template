@@ -3,15 +3,29 @@ default:
 
 serve:
  - 'clean:server'
- - 'jekyll:dev'
- - 'sass:dev'
- - 'autoprefixer:dev'
+ - 'svgstore'
+ - 'svg2png:dev'
+ - 'recompile'
  - 'connect'
  - 'watch'
 
 build:
  - 'clean:dist'
+ - 'svgstore'
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
+ - 'requirejs'
+ - 'modernizr'
+ - 'copy:dist'
+ - 'svg2png:dist'
+ - 'processhtml'
  - 'htmlmin'
+
+recompile:
+ - 'jekyll:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
+ - 'copy:scripts'
+ - 'copy:images'
+ - 'copy:fonts'
