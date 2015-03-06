@@ -25,13 +25,20 @@ module.exports = {
             src: 'fonts/{,*/}*.{eot,svg,ttf,woff,woff2}'
         }]
     },
-     dist:{
+    dist:{
         files: [{
             expand: true,
             dot: true,
             cwd: 'dev/_assets/',
             dest: 'web',
             src: ['imgs/{,*/}*.{png,jpg,jpeg,gif,svg}']
+        },
+        {
+            expand: true,
+            dot: true,
+            cwd: 'dev/_assets/',
+            dest: 'web',
+            src: 'fonts/{,*/}*.{eot,svg,ttf,woff,woff2}'
         },{
             expand: true,
             dot: true,
@@ -43,7 +50,13 @@ module.exports = {
             dot: true,
             cwd: 'dev/_assets/',
             dest: 'web',
-            src: 'fonts/{,*/}*.{eot,svg,ttf,woff,woff2}'
+            src: 'downloads/{,*/}*.{zip,pdf}'
+        },{
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/zeroclipboard/dist',
+            dest: 'web/scripts',
+            src: '*.swf'
         }]
     }
 };
