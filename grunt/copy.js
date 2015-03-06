@@ -48,12 +48,6 @@ module.exports = {
         },{
             expand: true,
             dot: true,
-            cwd: 'dev/_assets/',
-            dest: 'web',
-            src: 'downloads/{,*/}*.{zip,pdf}'
-        },{
-            expand: true,
-            dot: true,
             cwd: 'bower_components/zeroclipboard/dist',
             dest: 'web/scripts',
             src: '*.swf'

@@ -2,9 +2,9 @@ module.exports = {
     dev: {
         files: [{
             expand: true,
-			cwd: 'dev/_assets/svg/',
-			src: ['*.svg', '!_*.svg'],
-			dest: '.tmp/imgs/sprite/',
+            cwd: 'dev/_assets/svg/',
+            src: ['*.svg', '!_*.svg'],
+            dest: '.tmp/imgs/sprite/',
             rename: function(dest, src) {
                 return dest + "icon-sprite.svg.icon__" + src.replace(/\.svg$/, ".png");
             }
@@ -13,9 +13,9 @@ module.exports = {
     dist: {
         files: [{
             expand: true,
-			cwd: 'dev/_assets/svg/',
-			src: ['*.svg', '!_*.svg'],
-			dest: 'web/imgs/sprite/',
+            cwd: 'dev/_assets/svg/',
+            src: ['*.svg', '!_*.svg'],
+            dest: 'web/imgs/sprite/',
             rename: function(dest, src) {
                 return dest + "icon-sprite.svg.icon__" + src.replace(/\.svg$/, ".png");
             }

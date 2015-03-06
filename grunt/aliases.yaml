@@ -29,5 +29,4 @@ recompile:
  - 'copy:scripts'
  - 'copy:images'
  - 'copy:fonts'
- - 'copy:downloads'
  - 'svg2png:dev'
